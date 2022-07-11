@@ -21,24 +21,20 @@
 
 		default_layer {
 			bindings = <
-	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                 &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                 &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &none              &kp K_APP &kp RALT  &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-	               &none &mo RED &kp SPACE &kp LCTRL &kp LMETA          &kp RMETA &kp RCTRL &kp SPACE &mo BLUE &none
+	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
+	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &none             &kp K_APP &kp RALT  &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+	               &none &mo RED &kp SPACE  &kp LCTRL &kp LMETA        &kp RMETA &kp RCTRL &kp SPACE &mo BLUE &none
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		blue {
-			bindings = 
+			bindings = <
 	&kp TILD   &kp N1    &kp N2     &kp N3   &kp N4   &kp N5                                         &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
 	&trans     &kp N6    &kp N7     &kp N8   &kp N9   &kp N0                                         &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
 	&trans     &kp MINUS &kp EQUALS &kp LBKT &kp RBKT &kp BSLSH &trans &trans          &trans &trans &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp APOS  &trans
 	                                &trans  &mo GREEN &trans    &trans &trans          &trans &trans &trans  &trans    &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		red {
@@ -48,8 +44,6 @@
 	&trans &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &trans        &kp trans &kp trans &kp trans &kp KP_N1  &kp KP_N2 &kp KP_N9 &kp KP_SLASH &trans
 	                      &trans  &trans  &trans &trans &trans        &kp trans &kp trans &kp trans &kp KP_N0  &kp KP_DOT
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		green {
@@ -59,8 +53,6 @@
 	&trans       &trans       &trans       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &rgb_ug RGB_SAD  &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_SAI &trans
 	                                       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &trans &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
