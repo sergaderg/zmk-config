@@ -30,10 +30,10 @@
 
 		blue {
 			bindings = <
-	&kp TILD   &kp N1    &kp N2     &kp N3   &kp N4   &kp N5                                         &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
-	&trans     &kp N6    &kp N7     &kp N8   &kp N9   &kp N0                                         &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-	&trans     &kp MINUS &kp EQUAL  &kp LBKT &kp RBKT &kp BSLSH &trans &trans          &trans &trans &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
-	                                &trans  &mo GREEN &trans    &trans &trans          &trans &trans &trans  &trans    &trans
+	&kp TILD   &kp N1    &kp N2     &kp N3   &kp N4   &kp N5                                        &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
+	&trans     &kp N6    &kp N7     &kp N8   &kp N9   &kp N0                                        &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
+	&trans     &kp MINUS &kp EQUAL  &kp LBKT &kp RBKT &kp BSLH &trans &trans          &trans &trans &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
+	                                &trans  &mo GREEN &trans   &trans &trans          &trans &trans &trans  &trans    &trans
 			>;
 		};
 
