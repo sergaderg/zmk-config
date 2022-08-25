@@ -21,10 +21,10 @@
 
 		default_layer {
 			bindings = <
-	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp LMETA             &kp K_APP &kp RMETA &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-	                   &mo GREEN &mo RED &kp LSHIFT &kp SPACE &kp LCTRL             &kp RCTRL &kp SPACE &kp RSHIFT &mo BLUE &mo GREEN
+	&kp TAB  &kp Q &kp W &kp E &kp R &kp T                                                &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
+	&kp ESC  &kp A &kp S &kp D &kp F &kp G                                                &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
+	&kp LBKT &kp Z &kp X &kp C &kp V &kp B &kp LMETA &kp LALT         &kp K_APP &kp RMETA &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp SQT
+	          &mo GREEN &mo RED &kp SPACE &kp LSHIFT &kp LCTRL       &kp RCTRL &kp RSHIFT &kp SPACE &mo BLUE &mo GREEN
 			>;
 		};
 
@@ -33,7 +33,7 @@
 	&kp GRAVE  &kp N1    &kp N2     &kp N3   &kp N4   &kp N5                                        &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
 	&trans     &kp N6    &kp N7     &kp N8   &kp N9   &kp N0                                        &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
 	&trans     &kp MINUS &kp EQUAL  &kp LBKT &kp RBKT &kp BSLH &trans &trans          &trans &trans &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
-	                                &trans   &trans  &trans &trans &trans          &trans &trans &trans  &trans    &trans
+	                                &trans   &trans   &trans   &trans &trans          &trans &trans &trans  &trans    &trans
 			>;
 		};
 
