@@ -13,7 +13,9 @@
 #define DEFAULT 0
 #define BLUE 1
 #define RED 2
-#define GREEN 3
+#define GAME 3
+#define GAME_PLUS 4
+#define GREEN 5
 
 / {
 	keymap {
@@ -46,13 +48,43 @@
 			>;
 		};
 
+		game {
+			bindings = <
+	&trans &trans &trans &trans &trans &trans                                    &kp R  &kp Q  &trans &trans &kp E &trans
+	&trans &trans &trans &trans &trans &trans                                    &kp F  &kp A  &kp W  &kp S  &kp D &trans
+	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &kp B  &kp V  &kp C  &kp X  &kp Z &trans
+	                     &trans &trans &trans &trans &trans        &trans &trans &trans &mo GAME_PLUS &trans
+			>;
+		}
+
+		game_plus {
+			bindings = <
+	&trans &trans &trans &trans &trans &trans                                    &kp 5  &kp 4  &kp 3  &kp 2  &kp 1  &kp GRAVE
+	&trans &trans &trans &trans &trans &trans                                    &kp G &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+			>;
+		}
+
 		green {
 			bindings = <
 	&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                    &kp KP_NLCK  &rgb_ug RGB_EFR  &trans          &trans          &rgb_ug RGB_EFF &trans
-	&bt BT_CLR   &trans       &trans       &trans       &trans       &trans                                          &trans       &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_TOG
+	&bt BT_CLR   &to DEFAULT  &to GAME     &trans       &trans       &trans                                          &trans       &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_TOG
 	&trans       &trans       &trans       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &rgb_ug RGB_SAD  &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_SAI &trans
 	                                       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &trans &trans
 			>;
 		};
 	};
+
+	/*
+		layer_name {
+			bindings = <
+	&trans &trans &trans &trans &trans &trans                                    &trans &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans &trans                                    &trans &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+			>;
+		}
+
+	*/
 };
