@@ -59,8 +59,8 @@
 
 		game_plus {
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                    &kp 5  &kp 4  &kp 3  &kp 2  &kp 1  &kp GRAVE
-	&trans &trans &trans &trans &trans &trans                                    &kp G &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans &trans                                    &kp N5 &kp N4 &kp N3 &kp N2 &kp N1 &kp GRAVE
+	&trans &trans &trans &trans &trans &trans                                    &kp G  &trans &trans &trans &trans &trans
 	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
 			>;
