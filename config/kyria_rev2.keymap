@@ -55,7 +55,7 @@
 	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &kp B  &kp V  &kp C  &kp X  &kp Z &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &mo GAME_PLUS &trans
 			>;
-		}
+		};
 
 		game_plus {
 			bindings = <
@@ -64,7 +64,7 @@
 	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
 			>;
-		}
+		};
 
 		green {
 			bindings = <
@@ -84,7 +84,7 @@
 	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
 			>;
-		}
+		};
 
 	*/
 };
