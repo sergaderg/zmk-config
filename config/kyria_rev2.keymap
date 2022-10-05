@@ -52,8 +52,8 @@
 			bindings = <
 	&trans &trans &trans &trans &trans &trans                                    &kp R  &kp Q  &trans &trans &kp E &trans
 	&trans &trans &trans &trans &trans &trans                                    &kp F  &kp A  &kp W  &kp S  &kp D &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &kp B  &kp V  &kp C  &kp X  &kp Z &trans
-	                     &trans &trans &trans &trans &trans        &trans &trans &trans &mo GAME_PLUS &trans
+	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &trans
+	                     &trans &trans &trans &trans &trans        &LCTRL &LSHIFT &kp SPACE &mo GAME_PLUS &trans
 			>;
 		};
 
