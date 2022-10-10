@@ -50,7 +50,7 @@
 
 		game {
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                    &kp R  &kp Q  &trans &trans &kp E &trans
+	&trans &trans &trans &trans &trans &trans                                    &kp R  &kp Q  &trans &trans &kp E &kp TAB
 	&trans &trans &trans &trans &trans &trans                                    &kp F  &kp A  &kp W  &kp S  &kp D &trans
 	&trans &trans &trans &trans &trans &trans &trans &trans     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &trans
 	                     &trans &trans &trans &trans &trans    &kp LCTRL &kp LSHIFT &kp SPACE &mo GAME_PLUS &trans
