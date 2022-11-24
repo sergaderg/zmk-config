@@ -42,14 +42,14 @@
 		};
 
 		gameret: gameret {
-			label = "ZM_u_chat";
+			label = "ZM_game_ret";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings = <&macro_press &to GAME &kp RET>;
 		};
 
 		gameesc: gameesc {
-			label = "ZM_u_chat";
+			label = "ZM_game_esc";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings = <&macro_press &to GAME &kp ESC>;
