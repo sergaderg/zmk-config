@@ -89,7 +89,7 @@
 
 		game {
 			bindings = <
-	&trans &trans &trans &tchat &ychat &uchat                                    &kp R  &kp Q  &trans &trans &kp E &kp TAB
+	&trans &trans &trans &tchat &ychat &uchat                                    &kp R  &kp Q  &kp H  &kp I  &kp E &kp TAB
 	&trans &trans &trans &trans &trans &trans                                    &kp F  &kp A  &kp W  &kp S  &kp D &trans
 	&trans &trans &trans &trans &trans &trans &trans &trans     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &trans
 	                     &trans &trans &trans &trans &trans    &kp LCTRL &kp LSHIFT &kp SPACE &mo GAME_PLUS &trans
@@ -98,9 +98,9 @@
 
 		game_plus {
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                    &kp N5 &kp N4 &kp N3 &kp N2 &kp N1 &kp GRAVE
-	&trans &trans &trans &trans &trans &trans                                    &kp G  &trans &trans &trans &trans &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+	&trans &trans &trans &trans &trans &trans                                    &kp N5 &kp N4 &kp N3    &kp N2  &kp N1   &kp GRAVE
+	&trans &trans &trans &trans &trans &trans                                    &kp G  &trans &trans    &trans  &trans   &trans
+	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
 			>;
 		};
