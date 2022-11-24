@@ -72,7 +72,7 @@
 		blue {
 			bindings = <
 	&kp GRAVE  &kp STAR  &kp EQUAL  &kp PERCENT &kp EQUAL &kp AMPS                                      &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
-	&trans     &kp RPAR  &kp LBKT   &kp RBKT    &kp LPAR  &kp PLUS                                      &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
+	&trans     &kp LPAR  &kp LBKT   &kp RBKT    &kp RPAR  &kp PLUS                                      &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
 	&kp DOLLAR &kp EXCL  &kp HASH   &kp FSLH    &kp CARET &kp BSLH &trans &trans          &trans &trans &trans  &kp FSLH  &kp AT    &kp BSLH  &kp MINUS &trans
 	                                   &trans   &trans    &trans   &trans &trans          &trans &trans &trans  &trans    &trans
 			>;
