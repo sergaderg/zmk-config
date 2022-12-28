@@ -11,12 +11,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define DEFAULT 0
-#define BLUE 1
-#define RED 2
-#define GAME 3
-#define GAME_PLUS 4
-#define GAME_CHAT 5
-#define SYSTEM 6
+#define QWERTY 1
+#define BLUE 2
+#define QWERTY_BLUE 3
+#define RED 4
+#define GAME 5
+#define GAME_PLUS 6
+#define GAME_CHAT 7
+#define SYSTEM 8
 
 / {
 	macros {
@@ -69,12 +71,30 @@
 			>;
 		};
 
+		qwerty {
+			bindings = <
+	&kp TAB  &kp Q &kp W &kp E &kp R &kp T                                                &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
+	&kp ESC  &kp A &kp S &kp D &kp F &kp G                                                &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
+	&kp LBKT &kp Z &kp X &kp C &kp V &kp B &kp LMETA &kp LALT         &kp K_APP &kp RMETA &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp SQT
+	          &mo SYSTEM &mo RED &kp SPACE &kp LSHIFT &kp LCTRL       &kp RCTRL &kp RSHIFT &kp SPACE &mo QWERTY_BLUE &mo SYSTEM
+			>;
+		};
+
 		blue {
 			bindings = <
 	&kp GRAVE  &kp STAR  &kp EQUAL  &kp PERCENT &kp EQUAL &kp AMPS                                      &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
 	&trans     &kp LPAR  &kp LBKT   &kp RBKT    &kp RPAR  &kp PLUS                                      &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
 	&kp DOLLAR &kp EXCL  &kp HASH   &kp FSLH    &kp CARET &kp BSLH &trans &trans          &trans &trans &trans  &kp FSLH  &kp AT    &kp BSLH  &kp MINUS &trans
 	                                   &trans   &trans    &trans   &trans &trans          &trans &trans &trans  &trans    &trans
+			>;
+		};
+
+		qwerty_blue {
+			bindings = <
+	&kp GRAVE  &kp N1    &kp N2     &kp N3   &kp N4   &kp N5                                        &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
+	&trans     &kp N6    &kp N7     &kp N8   &kp N9   &kp N0                                        &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
+	&trans     &kp MINUS &kp EQUAL  &kp LBKT &kp RBKT &kp BSLH &trans &trans          &trans &trans &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
+	                                &trans   &trans   &trans   &trans &trans          &trans &trans &trans  &trans    &trans
 			>;
 		};
 
@@ -117,7 +137,7 @@
 		system {
 			bindings = <
 	&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                    &kp KP_NLCK  &rgb_ug RGB_EFR  &trans          &trans          &rgb_ug RGB_EFF &trans
-	&bt BT_CLR   &to DEFAULT  &to GAME     &trans       &trans       &trans                                          &trans       &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_TOG
+	&bt BT_CLR   &to DEFAULT  &to GAME     &to QWERTY   &trans       &trans                                          &trans       &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_TOG
 	&trans       &trans       &trans       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &rgb_ug RGB_SAD  &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_SAI &trans
 	                                       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &trans &trans
 			>;
