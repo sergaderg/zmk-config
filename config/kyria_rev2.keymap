@@ -17,8 +17,9 @@
 #define RED 4
 #define GAME 5
 #define GAME_PLUS 6
-#define GAME_CHAT 7
-#define SYSTEM 8
+#define GAME_EXTRA 7
+#define GAME_CHAT 8
+#define SYSTEM 9
 
 / {
 	macros {
@@ -102,26 +103,35 @@
 			bindings = <
 	&trans &kp F1 &kp F2  &kp F3  &kp F4  &trans                                          &trans &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_MINUS &trans
 	&trans &kp F5 &kp F6  &kp F7  &kp F8  &trans                                          &trans &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &kp KP_ENTER
-	&trans &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &trans        &trans &trans &trans &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp KP_SLASH &trans
-	                      &trans  &trans  &trans &trans &trans        &trans &trans &kp KP_N0 &kp KP_DOT &trans
+	&trans &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &trans              &trans &trans &trans &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp KP_SLASH &trans
+	                      &trans  &trans  &trans &trans &trans              &trans &trans &kp KP_N0 &kp KP_DOT &trans
 			>;
 		};
 
 		game {
 			bindings = <
-	&trans &trans &trans &tchat &ychat &uchat                                    &kp R  &kp Q  &kp H  &kp I  &kp E &kp TAB
-	&trans &trans &trans &trans &trans &trans                                    &kp F  &kp A  &kp W  &kp S  &kp D &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &trans
-	                     &trans &trans &trans &trans &trans    &kp LCTRL &kp LSHIFT &kp SPACE &mo GAME_PLUS &trans
+	&kp BSLH &kp LBKT &kp RBKT  &tchat  &ychat &uchat                                          &kp R  &kp Q  &kp O  &kp I  &kp E &kp TAB
+	&kp SQT  &kp SEMI &kp L     &kp K   &kp J  &kp H                                           &kp F  &kp A  &kp W  &kp S  &kp D &kp ENTER
+	&kp P    &kp FSLH &kp COMMA &kp DOT &kp M  &kp N  &trans     &kp RALT     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &trans
+	           &mo GAME_EXTRA &mo GAME_PLUS &kp SPACE &kp RSHIFT &kp RCTRL    &kp LCTRL &kp LSHIFT &kp SPACE &mo GAME_PLUS &mo GAME_EXTRA
 			>;
 		};
 
 		game_plus {
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                    &kp N5 &kp N4 &kp N3    &kp N2  &kp N1   &kp GRAVE
+	&trans &kp N0 &kp N9 &kp N8 &kp N7 &kp N6                                    &kp N5 &kp N4 &kp N3    &kp N2  &kp N1   &kp GRAVE
 	&trans &trans &trans &trans &trans &trans                                    &kp G  &trans &trans    &trans  &trans   &trans
 	&trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+			>;
+		};
+
+		game_extra {
+			bindings = <
+	&trans &kp F1 &kp F2  &kp F3  &kp F4  &trans                                    &trans &kp INS  &trans    &trans    &kp DEL  &kp BSPC
+	&trans &kp F5 &kp F6  &kp F7  &kp F8  &trans                                    &trans &kp HOME &kp PG_UP &kp PG_DN &kp END &trans
+	&trans &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &trans        &trans &trans &trans &trans   &trans    &trans    &trans  &trans
+	                        &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
 			>;
 		};
 
