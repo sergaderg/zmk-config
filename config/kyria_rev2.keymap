@@ -65,19 +65,19 @@
 
 		default_layer {
 			bindings = <
-	&kp TAB  &kp SEMI &kp COMMA &kp DOT &kp P &kp Y                                                &kp F     &kp G    &kp C     &kp R &kp L &kp BSPC
-	&kp ESC  &kp A    &kp O     &kp E   &kp U &kp I                                                &kp D     &kp H    &kp T     &kp N &kp S &kp RET
-	&kp LBKT &kp SQT  &kp Q     &kp J   &kp K &kp X &kp LMETA &kp LALT         &kp K_APP &kp RMETA &kp B     &kp M    &kp W     &kp V &kp Z &kp SQT
-	                  &mo SYSTEM &mo RED &kp SPACE &kp LSHIFT &kp LCTRL        &kp RCTRL &kp RSHIFT &kp SPACE &mo BLUE &mo SYSTEM
+	&kp TAB  &kp SEMI &kp COMMA &kp DOT &kp P &kp Y                                                &kp F     &kp G    &kp C     &kp R &kp L &kp SLASH
+	&kp ESC  &kp A    &kp O     &kp E   &kp U &kp I                                                &kp D     &kp H    &kp T     &kp N &kp S &kp MINUS
+	&kp LBKT &kp SQT  &kp Q     &kp J   &kp K &kp X &kp LMETA &kp LALT         &kp K_APP &kp RET   &kp B     &kp M    &kp W     &kp V &kp Z &kp BSLH
+	                   &mo SYSTEM &mo RED &kp BSPC &kp LSHIFT &kp LCTRL        &kp RCTRL &kp RSHIFT &kp SPACE &mo BLUE &mo SYSTEM
 			>;
 		};
 
 		qwerty {
 			bindings = <
-	&kp TAB  &kp Q &kp W &kp E &kp R &kp T                                                &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&kp ESC  &kp A &kp S &kp D &kp F &kp G                                                &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
-	&kp LBKT &kp Z &kp X &kp C &kp V &kp B &kp LMETA &kp LALT         &kp K_APP &kp RMETA &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp SQT
-	          &mo SYSTEM &mo RED &kp SPACE &kp LSHIFT &kp LCTRL       &kp RCTRL &kp RSHIFT &kp SPACE &mo QWERTY_BLUE &mo SYSTEM
+	&kp TAB  &kp Q &kp W &kp E &kp R &kp T                                    &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
+	&kp ESC  &kp A &kp S &kp D &kp F &kp G                                    &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
+	&kp LBKT &kp Z &kp X &kp C &kp V &kp B &trans &trans        &trans &trans &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp SQT
+	             &mo SYSTEM &mo RED &trans &trans &trans        &trans &trans &trans &mo QWERTY_BLUE &mo SYSTEM
 			>;
 		};
 
