@@ -113,14 +113,14 @@
 	&kp BSLH &kp LBKT &kp RBKT  &tchat  &ychat &uchat                                          &kp R  &kp Q  &kp O  &kp I  &kp E &kp TAB
 	&kp SQT  &kp SEMI &kp L     &kp K   &kp J  &kp H                                           &kp F  &kp A  &kp W  &kp S  &kp D &kp CAPS
 	&kp P    &kp FSLH &kp COMMA &kp DOT &kp M  &kp N  &trans     &kp RALT     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &kp LSHFT
-	           &mo GAME_EXTRA &mo GAME_PLUS &kp SPACE &kp RSHIFT &kp RCTRL    &kp LCTRL &kp LSHFT &kp SPACE &mo GAME_PLUS &mo GAME_EXTRA
+	           &mo GAME_EXTRA &mo GAME_PLUS &kp BSPC &kp RSHIFT &kp RCTRL    &kp LCTRL &kp LSHFT &kp SPACE &mo GAME_PLUS &mo GAME_EXTRA
 			>;
 		};
 
 		game_plus {
 			bindings = <
 	&trans  &kp N0 &kp N9 &kp N8 &kp N7 &kp N6                                    &kp N5 &kp N4 &kp N3    &kp N2  &kp N1   &kp GRAVE
-	&kp ESC &trans &trans &trans &trans &trans                                    &kp G  &trans &trans    &trans  &trans   &trans
+	&kp ESC &trans &trans &trans &trans &trans                                    &kp G  &trans &trans    &trans  &trans   &kp ENTER
 	&trans  &trans &trans &trans &trans &trans &trans &trans        &trans &trans &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &trans
 	                     &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
 			>;
@@ -147,7 +147,7 @@
 		system {
 			bindings = <
 	&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                    &kp KP_NLCK  &rgb_ug RGB_EFR  &trans          &trans          &rgb_ug RGB_EFF &trans
-	&bt BT_CLR   &to DEFAULT  &to GAME     &to QWERTY   &trans       &trans                                          &trans       &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_TOG
+	&bt BT_CLR   &to DEFAULT  &to GAME     &to QWERTY   &trans       &trans                                          &kp CAPS     &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_TOG
 	&trans       &trans       &trans       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &rgb_ug RGB_SAD  &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_SAI &to GAME
 	                                       &trans       &trans       &trans       &trans &trans        &trans &trans &trans       &trans &trans
 			>;
