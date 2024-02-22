@@ -111,9 +111,9 @@
 		game {
 			bindings = <
 	&kp BSLH &kp LBKT &kp RBKT  &tchat  &ychat &uchat                                          &kp R  &kp Q  &kp O  &kp I  &kp E &kp TAB
-	&kp SQT  &kp SEMI &kp L     &kp K   &kp J  &kp H                                           &kp F  &kp A  &kp W  &kp S  &kp D &kp ENTER
-	&kp P    &kp FSLH &kp COMMA &kp DOT &kp M  &kp N  &trans     &kp RALT     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &trans
-	           &mo GAME_EXTRA &mo GAME_PLUS &kp SPACE &kp RSHIFT &kp RCTRL    &kp LCTRL &kp LSHIFT &kp SPACE &mo GAME_PLUS &mo GAME_EXTRA
+	&kp SQT  &kp SEMI &kp L     &kp K   &kp J  &kp H                                           &kp F  &kp A  &kp W  &kp S  &kp D &kp CAPS
+	&kp P    &kp FSLH &kp COMMA &kp DOT &kp M  &kp N  &trans     &kp RALT     &trans &kp LALT  &kp B  &kp V  &kp C  &kp X  &kp Z &kp LSHFT
+	           &mo GAME_EXTRA &mo GAME_PLUS &kp SPACE &kp RSHIFT &kp RCTRL    &kp LCTRL &kp LSHFT &kp SPACE &mo GAME_PLUS &mo GAME_EXTRA
 			>;
 		};
 
