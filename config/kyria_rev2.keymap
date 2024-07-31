@@ -11,15 +11,13 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define DEFAULT 0
-#define QWERTY 1
-#define BLUE 2
-#define QWERTY_BLUE 3
-#define RED 4
-#define GAME 5
-#define GAME_PLUS 6
-#define GAME_EXTRA 7
-#define GAME_CHAT 8
-#define SYSTEM 9
+#define BLUE 1
+#define RED 2
+#define GAME 3
+#define GAME_PLUS 4
+#define GAME_EXTRA 5
+#define GAME_CHAT 6
+#define SYSTEM 7
 
 / {
 	macros {
@@ -72,30 +70,12 @@
 			>;
 		};
 
-		qwerty {
-			bindings = <
-	&kp TAB  &kp Q &kp W &kp E &kp R &kp T                                    &kp Y     &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&kp ESC  &kp A &kp S &kp D &kp F &kp G                                    &kp H     &kp J    &kp K     &kp L   &kp SEMI &kp RET
-	&kp LBKT &kp Z &kp X &kp C &kp V &kp B &trans &trans        &trans &trans &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH &kp SQT
-	             &mo SYSTEM &mo RED &trans &trans &trans        &trans &trans &trans &mo QWERTY_BLUE &mo SYSTEM
-			>;
-		};
-
 		blue {
 			bindings = <
-	&kp GRAVE  &kp STAR  &kp EQUAL  &kp PERCENT &kp EQUAL &kp AMPS                                      &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
-	&trans     &kp LPAR  &kp LBKT   &kp RBKT    &kp RPAR  &kp PLUS                                      &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp RET
-	&kp DOLLAR &kp EXCL  &kp HASH   &kp FSLH    &kp CARET &kp BSLH &trans &trans          &trans &trans &trans  &kp FSLH  &kp AT    &kp BSLH  &kp MINUS &kp BSPC
+	&kp GRAVE  &kp EQUAL &kp STAR   &kp PERCENT &kp AMPS  &kp PIPE                                      &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
+	&kp PLUS   &kp LPAR  &kp LBKT   &kp RBKT    &kp RPAR  &kp MINUS                                     &trans  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
+	&kp DOLLAR &kp EXCL  &kp HASH   &kp FSLH    &kp CARET &kp AT   &trans &trans          &trans &trans &trans  &trans    &trans    &trans    &trans    &trans
 	                                   &trans   &trans    &trans   &trans &trans          &trans &trans &trans  &trans    &trans
-			>;
-		};
-
-		qwerty_blue {
-			bindings = <
-	&kp GRAVE  &kp N1    &kp N2     &kp N3   &kp N4   &kp N5                                        &kp INS &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp DEL
-	&trans     &kp N6    &kp N7     &kp N8   &kp N9   &kp N0                                        &kp H   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-	&trans     &kp MINUS &kp EQUAL  &kp LBKT &kp RBKT &kp BSLH &trans &trans          &trans &trans &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
-	                                &trans   &trans   &trans   &trans &trans          &trans &trans &trans  &trans    &trans
 			>;
 		};
 
